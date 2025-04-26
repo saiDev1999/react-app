@@ -6,7 +6,6 @@
 
 
 
-
 Git and Git hub :
 
 
@@ -20,3 +19,9 @@ day 4: blog screen - bug
 
 Git hub: remote repository hosting service 
 bit bucket, gitlab etc   
+
+
+
+
+
+react/april 28 new changes
