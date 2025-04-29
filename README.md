@@ -1,27 +1,17 @@
 
 
+ES 6(ecmascript version 6) Features: 
+
+1. let/ const 
+2. Arrow functions
+3. Template literals
+4. destructuring
+4. spread operator 
+5. default params 
+6. rest operator
+7. promises
+8. Async/await etc
 
 
-
-
-
-
-Git and Git hub :
-
-
-1. Git : VCS (version control system) is a tool for tracking changes in the project 
-
-
-day 1: login screen 
-day 2 : home screen 
-day 3 : about screen 
-day 4: blog screen - bug
-
-Git hub: remote repository hosting service 
-bit bucket, gitlab etc   
-
-
-
-
-
-react/april 28 new changes
+1. rest operator, and difference between rest and spread operator
+2. blogs
