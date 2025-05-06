@@ -3,14 +3,14 @@
 
 
 
-const Heading1 =()=>{
-    return <h1>H1 heading</h1>
+const Heading1 =({children})=>{
+    return <h1>{children}</h1>
 }
 
 export default Heading1
 
-export const Heading2 =()=>{
-    return <h2>H2 heading</h2>
+export const Heading2 =({children})=>{
+    return <h2>{children}</h2>
 }
 
 export const Heading3 =()=>{

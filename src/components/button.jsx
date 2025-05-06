@@ -3,9 +3,19 @@
 
 
 
-const Button = ()=>{
+const Button = ({title="Click"})=>{
+
+
+
+
+    const handleClick=()=>{
+
+        alert(title)
+
+    }
+  
     return(
-        <button>Login</button>
+        <button onClick={handleClick}  >{title}</button>
     )
 }
 
