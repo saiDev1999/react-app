@@ -25,9 +25,6 @@ const PackedItemsInTheBag = [
 
 ]
 
-
-
-
 const PackedItemList =()=>{
 
     return (
@@ -37,7 +34,7 @@ const PackedItemList =()=>{
       <ul>
         {
             PackedItemsInTheBag.map(eachItem=><Item name={eachItem.name} isPacked={eachItem.isPacked}  />)
-        }
+}
       
       </ul>
     </section>
@@ -51,7 +48,7 @@ const PackedItemList =()=>{
 export default PackedItemList
 
 function Item({ name, isPacked }) {
-    return isPacked && (
+    return isPacked ? 
       <li className="item">
 
          <del>
@@ -59,8 +56,16 @@ function Item({ name, isPacked }) {
           </del>
      
       
-      </li>
-    );
+      </li> :
+      <li className="item">
+
+      <del>
+         {name}
+       </del>
+  
+   
+   </li>
+
   }
   
 
