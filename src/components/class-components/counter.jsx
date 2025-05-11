@@ -1,8 +1,7 @@
 import { Component } from "react";
 
-import "./styles/counter.css"
-
 import styles from "./styles/counter.module.css"
+// import "./styles/counter1.css"
 
 
 
@@ -12,12 +11,21 @@ import styles from "./styles/counter.module.css"
 
 class Counter extends Component{
 
-    constructor(){
-        super()
-        this.state={
-            count:1
-        }
+
+
+    // direct object way
+    state={
+        count:1
     }
+
+
+    // constructor way
+    // constructor(){
+    //     super()
+    //     this.state={
+    //         count:1
+    //     }
+    // }
 
     incrementCount =()=>{
         this.setState({
@@ -62,7 +70,7 @@ class Counter extends Component{
             <h2>Count value : {this.state.count}</h2>
 
 
-            <p className={this.isEven()?styles.evenStyle: styles.oddStyle} >{this.isEven() ? `${this.state.count} is a Even number`:`${this.state.count} is a odd number`}</p>
+            <p className={this.isEven()?styles.evenStyle: "odd-style"} >{this.isEven() ? `${this.state.count} is a Even number`:`${this.state.count} is a odd number`}</p>
 
             {/* <p style={{
                 color:this.isEven() ? "blue":"red"

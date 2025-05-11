@@ -1,60 +1,46 @@
+class components :
 
 
-10 may : 
-1. State in react
-2. State usage in class components 
-3. Difference btw state and props
-4. examples of state in class components
-5. styles in react
-
-
-
-
-1. state - state is a object. which is nothing but a data inside a component. state is mutable, within the component
-2. props - to pass the data from parent to child components , props are immutable
-
-
-state in funtional component is used with help of hooks 
-state in class component is used with in defined methods in class components
+human life cycle : 
+1. Born stage
+2. Surviving stage
+3. Expiry stage
 
 
 
-state in class components :
+component life cycle methods :
+1. Mounting stage - when ever jsx is inserted inside the dom 
 
-ways to create a state  : 2 ways 
-1. using constructor
-2. direct object way
-
-
-
-to change state in class components we need to use setState method
-
-this.setState({
-    isLogin : true
-})
+1. constructor
+2. render
 
 
 
+2. Updating stage - based on the user actions - component will update the dom jsx
+
+1. render
+
+3. UnMounting stage - while navigating - dom jsx will be replaced with the new jsx - previous content will be removed from dom 
+
+1. component will unmount
 
 
 
-isLogin - true ? wellcome user : please login 
-
-please login 
-wellcome user
-
-button - 
+---------------------------------------------------------
 
 
 
-counter - 1
+how to apply the external library styles to our react app :
 
-button - on click - counter+1
+External styles package :
+1. Tailwind
+2. Boostrap
+3. Material UI
+4. Chakra ui
+4. Shadon ui
 
-styles:
-1. inline styles or object styles
-2. regular stylesheets - external css
-3. module styles
-
+Installing Boostrap in react app :
+1. Using CDN
+2. Using npm package - preferably
 
 
