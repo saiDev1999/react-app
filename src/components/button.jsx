@@ -5,9 +5,6 @@
 
 const Button = ({title="Click"})=>{
 
-
-
-
     const handleClick=()=>{
 
         alert(title)

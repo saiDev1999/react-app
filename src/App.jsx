@@ -1,4 +1,4 @@
-import Counter from "./components/class-components/counter";
+// import Counter from "./components/class-components/counter";
 import GreetingComponent from "./components/class-components/greeting";
 import EmployeeVisibleData from "./components/employee-data";
 import EvenOdd from "./components/even-odd"
@@ -7,6 +7,7 @@ import "../src/components/class-components/styles/counter.css"
 import CardComponent from "./components/bootstrap/card/card";
 import HeaderComponent from "./components/bootstrap/header/header";
 import StripedTable from "./components/bootstrap/table/table";
+import Counter from "./components/functional/hooks/useState/counter";
 
 const App =()=>{
 
@@ -52,9 +53,11 @@ const App =()=>{
   return (
 <>
 <HeaderComponent  title={"Flipkaart"}  navItems={["Home","Features","Pricing","About","Blog"]} />
-<HeaderComponent  title={"Amazoon"}  navItems={["Home","Features","Pricing","About","Blog"]} />
-<StripedTable tableData={employeeData}  headings={headingList}  />
-<div style={{
+
+<Counter/>
+{/* <HeaderComponent  title={"Amazoon"}  navItems={["Home","Features","Pricing","About","Blog"]} />
+<StripedTable tableData={employeeData}  headings={headingList}  /> */}
+{/* <div style={{
       flexDirection:"row",
       flex:1,
       display:"flex",
@@ -74,7 +77,7 @@ const App =()=>{
       />
     
    
-    </div>
+    </div> */}
 
 
 </>
