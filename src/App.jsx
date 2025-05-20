@@ -8,6 +8,8 @@ import CardComponent from "./components/bootstrap/card/card";
 import HeaderComponent from "./components/bootstrap/header/header";
 import StripedTable from "./components/bootstrap/table/table";
 import Counter from "./components/functional/hooks/useState/counter";
+import { UseEffectExample } from "./components/functional/hooks/useEffect/useEffect";
+import UseEffectEx2 from "./components/functional/hooks/useEffect/useEffectEx2";
 
 const App =()=>{
 
@@ -53,8 +55,10 @@ const App =()=>{
   return (
 <>
 <HeaderComponent  title={"Flipkaart"}  navItems={["Home","Features","Pricing","About","Blog"]} />
+<UseEffectExample/>
+<UseEffectEx2/>
 
-<Counter/>
+{/* <Counter/> */}
 {/* <HeaderComponent  title={"Amazoon"}  navItems={["Home","Features","Pricing","About","Blog"]} />
 <StripedTable tableData={employeeData}  headings={headingList}  /> */}
 {/* <div style={{

@@ -12,7 +12,7 @@ function HeaderComponent(props) {
           <Navbar.Brand href="#home">{title}</Navbar.Brand>
           <Nav className="me-auto">
            {
-            navItems.map(eachItem=><Nav.Link href="#home">{eachItem}</Nav.Link>)
+            navItems.map((eachItem,index)=><Nav.Link  key={index} href="#home">{eachItem}</Nav.Link>)
            }
 
 

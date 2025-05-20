@@ -3,12 +3,13 @@ import React from "react"
 
 
 
-const ListItems =()=>{
+const ListItems =(props)=>{
+    const {list}=props
     return(
         <React.Fragment>
-        <li>Apple</li>
-        <li>Mango</li>
-        <li>Kiwi</li>
+        {
+            list.map((each,index)=><li key={index} >{each}</li>)
+        }
         </React.Fragment>
     )
 }

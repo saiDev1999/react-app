@@ -4,12 +4,13 @@ import ListItems from "./list-items"
 
 
 
-const OrderedList =()=>{
+const OrderedList =(props)=>{
+    const {list}=props
 
     return(
   
         <ol>
-           <ListItems/>
+           <ListItems  list={list} />
         </ol>
 
     )
