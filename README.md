@@ -2,45 +2,27 @@
 
 
 
-Forms :
-
- 2 ways to handle forms in react
-
- 1. uncontrolled way - (uncontrolled components)
-    Here react doesn't control the data(state) changes
-    validations will be possible only while submitting
-    Dom will control the inputs
-    ex : useRef 
-
-
- 2. controlled way - (controlled components)
-    React will control the state changes
-    Field validations are possible
-    React will control the input
-
-
-
-scenario 1 :
-100 inputs - name,age,...
-
-submit
-
-
-scenario 2 :
-100 inputs 
 
 
 
 
+steps :
 
-useRef :
-Its useful for accessing DOM elements or keeping mutable variables btw renders without causing re-render when they changes
-
-
-
-useRef will accept an initial argument 
-
-useRef(null)
+1. Take a form (login (username, password), registration(username,password,confirmPassword,mobile number))
+2. Take a states for the form input elements
+3. pass the state value to input via attribute value
+4. onChange attritube for the inputfor  controlling and validating the fields 
+5. To collect the value from input use event.target.value
 
 
-useRef.current
+const [username,setUsername] = useState("")
+
+
+
+const handleChange =(event)=>{
+   console.log(event.target.value)
+
+}
+
+username 
+<input value={username} onChange={handleChange} />
