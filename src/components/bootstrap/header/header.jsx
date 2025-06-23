@@ -1,9 +1,16 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
 
 function HeaderComponent(props) {
   const { title, navItems } = props;
+
+  const handlNavigation =()=>{
+    console.log("hey hello")
+    
+
+  }
 
   return (
     <>
@@ -11,15 +18,16 @@ function HeaderComponent(props) {
         <Container className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <Nav className="me-4">
-              {navItems.map((eachItem, index) => (
-                <Nav.Link
-                  key={index}
-                  href="#"
-                  className="px-3 text-light nav-link-custom"
-                >
-                  {eachItem}
-                </Nav.Link>
-              ))}
+
+            <Link   className="px-3 text-light nav-link-custom" to="/">Home</Link> 
+            <Link   className="px-3 text-light nav-link-custom" to="/about">About</Link> 
+            <Link   className="px-3 text-light nav-link-custom" to="/setting">Settings</Link> 
+            <Link   className="px-3 text-light nav-link-custom" to="/product-listing">Products</Link> 
+              {/* {navItems.map((eachItem, index) => (
+
+ <Link               className="px-3 text-light nav-link-custom" to="/about">Home</Link> 
+               
+              ))} */}
             </Nav>
             <Navbar.Brand
               href="#home"
