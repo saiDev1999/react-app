@@ -3,26 +3,42 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 function HeaderComponent(props) {
-    const {title,navItems}=props
+  const { title, navItems } = props;
 
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">{title}</Navbar.Brand>
-          <Nav className="me-auto">
-           {
-            navItems.map((eachItem,index)=><Nav.Link  key={index} href="#home">{eachItem}</Nav.Link>)
-           }
-
-
-            {/* <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-          </Nav>
+      <Navbar bg="dark" variant="dark" expand="lg" className="shadow-sm">
+        <Container className="d-flex justify-content-between align-items-center">
+          <div className="d-flex align-items-center">
+            <Nav className="me-4">
+              {navItems.map((eachItem, index) => (
+                <Nav.Link
+                  key={index}
+                  href="#"
+                  className="px-3 text-light nav-link-custom"
+                >
+                  {eachItem}
+                </Nav.Link>
+              ))}
+            </Nav>
+            <Navbar.Brand
+              href="#home"
+              className="fw-bold text-uppercase mb-0"
+              style={{ letterSpacing: '1px' }}
+            >
+              {title}
+            </Navbar.Brand>
+          </div>
         </Container>
       </Navbar>
-      <br />
+
+      <style jsx="true">{`
+        .nav-link-custom:hover {
+          color: #0dcaf0 !important;
+          text-decoration: underline;
+          transition: all 0.2s ease-in-out;
+        }
+      `}</style>
     </>
   );
 }
