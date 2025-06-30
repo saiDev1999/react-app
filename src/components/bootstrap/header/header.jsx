@@ -17,25 +17,27 @@ function HeaderComponent(props) {
       <Navbar bg="dark" variant="dark" expand="lg" className="shadow-sm">
         <Container className="d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
+          <Navbar.Brand
+              href="#home"
+        className="px-3 text-light nav-link-custom"
+              style={{ letterSpacing: '1px' }}
+            >
+              Recipe Maker
+            </Navbar.Brand>
             <Nav className="me-4">
+          
 
             <Link   className="px-3 text-light nav-link-custom" to="/">Home</Link> 
             <Link   className="px-3 text-light nav-link-custom" to="/about">About</Link> 
             <Link   className="px-3 text-light nav-link-custom" to="/setting">Settings</Link> 
-            <Link   className="px-3 text-light nav-link-custom" to="/product-listing">Products</Link> 
+            <Link   className="px-3 text-light nav-link-custom" to="/product-listing">Recipes</Link> 
               {/* {navItems.map((eachItem, index) => (
 
  <Link               className="px-3 text-light nav-link-custom" to="/about">Home</Link> 
                
               ))} */}
             </Nav>
-            <Navbar.Brand
-              href="#home"
-              className="fw-bold text-uppercase mb-0"
-              style={{ letterSpacing: '1px' }}
-            >
-              {title}
-            </Navbar.Brand>
+           
           </div>
         </Container>
       </Navbar>

@@ -49,3 +49,35 @@ http://localhost:5173/ - BASE URL
 
 
 
+
+
+
+
+
+
+For api calls :
+1. Fetch
+2. Axios
+3. React Query
+4. SWR
+
+
+
+
+Axios :
+Its a npm package which is widely used for the HTTP request for javascript apps
+
+
+Advantages of axios over fetch:
+1. Status codes will be provided  
+2. Automatic json converstion is possible using axios
+
+
+2  ways to navigate :
+1. Link - when its in return jsx
+2. using useNavigate from react-router-dom - js functions
+
+
+
+useParams :
+This is responsible for extracting dynamic info from url
