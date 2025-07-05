@@ -1,14 +1,15 @@
+import React from "react"
 
 
 
 
 
-const Button = ({title="Click"})=>{
+const Button = ({title="Click",onClick})=>{
+
+    console.log(title,"Title")
 
     const handleClick=()=>{
-
-        alert(title)
-
+        onClick()
     }
   
     return(
@@ -16,4 +17,4 @@ const Button = ({title="Click"})=>{
     )
 }
 
-export default Button
+export default React.memo(Button)
