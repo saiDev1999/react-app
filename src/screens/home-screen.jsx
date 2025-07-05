@@ -1,10 +1,13 @@
+import { useContext } from "react";
 import HeaderComponent from "../components/bootstrap/header/header";
 import './HomeScreen.css'; // Create this file for styling
 import { Container, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { DataSharedContext } from "../App";
 
 const HomeScreen = () => {
   const navigate = useNavigate();
+  const {userData}=useContext(DataSharedContext)
 
   return (
     <div className="home-screen">
@@ -14,7 +17,7 @@ const HomeScreen = () => {
       />
 
       <Container className="home-content text-center">
-        <h1 className="display-4">Welcome to Flipkaart Recipes</h1>
+        <h1 className="display-4">Welcome to Flipkaart {userData.name}</h1>
         <p className="lead">
           Discover amazing recipes from around the world.
         </p>

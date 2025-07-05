@@ -1,10 +1,15 @@
+import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
+import { DataSharedContext } from '../../../App';
 
 function HeaderComponent(props) {
   const { title, navItems } = props;
+
+  const userData =useContext(DataSharedContext)
+  console.log(userData,"userData")
 
   const handlNavigation =()=>{
     console.log("hey hello")
@@ -22,9 +27,10 @@ function HeaderComponent(props) {
         className="px-3 text-light nav-link-custom"
               style={{ letterSpacing: '1px' }}
             >
-              Recipe Maker
+              Recipe Maker  
             </Navbar.Brand>
             <Nav className="me-4">
+              {/* <h1 style={{color:"red"}} >{"good morning" + " " +  userData.name}</h1> */}
           
 
             <Link   className="px-3 text-light nav-link-custom" to="/">Home</Link> 

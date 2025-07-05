@@ -52,9 +52,30 @@ CRUD :
 4. Delete
 
 
+Global state managment :
+1. Context api 
+2. Redux
+3. Zustard
+4. Zotai
+
+
+Prop - parent to child
+
+Prop drilling : passing the data in nested level of components to reach the final component and utilize the data
+
+React Context api :
+Its a way to manage the state in the react app globally with out prop drilling
 
 
 
+
+
+
+Steps :
+1. Identify the component to create a context globally
+2. Create a context(store) using create context medthod from react
+3. Wrap the app using provider provided by context and pass the value(attritube) to be shared across the app
+4. Now you can utilize the data across the app by simply using useContext hook
 
 
 
